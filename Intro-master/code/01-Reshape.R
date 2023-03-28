@@ -21,6 +21,7 @@ tidy <- melt(raw, id = "religion",
   variable.name = "income", value.name = "n")
 
 # Variable names in cells
+# Pick good naming conventions
 
 raw <- read.delim("data/weather.txt", check.names = F, na.strings = ".")
 
@@ -59,6 +60,7 @@ head(tidy)
 # ------------------------------------------
 
 # Data split across many files
+# Assign colors
 
 df1 <- data.frame(color = "white", value = c(3, 4))
 df2 <- data.frame(color = "blue", value = c(3, 4, 5))
